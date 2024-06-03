@@ -1,4 +1,3 @@
-# TechWave-XR
 https://youtu.be/C8qIytorC28
 https://chyngyzutkelbaev.github.io/TechWave-XR/
 
