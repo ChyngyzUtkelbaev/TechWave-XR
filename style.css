@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181B;
+    color: #fff;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.nav-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 70%;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1e40af;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
+
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+    color: #1d4ed8;
+}
+
+header .content h1 span {
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+header .content p {
+    margin-bottom: 2rem;
+    color: #aaa;
+}
+
+header .image img {
+    max-width: 600px;
+    margin: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+section .header {
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.features,
+.pricing,
+.our-services,
+.our-projects,
+.client-testimonials {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.features .card,
+.pricing .card,
+.our-services .card,
+.our-projects .card,
+.client-testimonials .card {
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.features .card:hover,
+.pricing .card:hover,
+.our-services .card:hover,
+.our-projects .card:hover,
+.client-testimonials .card:hover {
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.features .card span,
+.our-services .card span,
+.our-projects .card span,
+.client-testimonials .card span {
+    display: inline-block;
+    background-color: #1e40af;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.features .card h4,
+.our-services .card h4,
+.our-projects .card h4,
+.client-testimonials .card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.features .card p,
+.our-services .card p,
+.our-projects .card p,
+.client-testimonials .card p {
+    margin-bottom: 1rem;
+}
+
+.features .card a,
+.our-services .card a,
+.our-projects .card a,
+.client-testimonials .card a {
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.features .card a:hover,
+.our-services .card a:hover,
+.our-projects .card a:hover,
+.client-testimonials .card a:hover {
+    color: #1e40af;
+}
+
+.product-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.product-content .left {
+    flex: 1;
+}
+
+.product-content .right {
+    flex: 1;
+}
+
+.product-content video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.order-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #27272a;
+    border-radius: 15px;
+}
+
+.order-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form label {
+    margin-bottom: 0.5rem;
+}
+
+.order-form input,
+.order-form button {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+}
+
+.order-form button {
+    background-color: #1d4ed8;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.order-form button:hover {
+    background-color: #1e40af;
+}
+
+.news-feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.news-item {
+    background-color: #27272a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.news-item:hover {
+    background-color: #323232;
+}
+
+footer {
+    padding: 2rem 1rem;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+footer .socials a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+footer .socials a:hover {
+    background-color: #1e40af;
+}

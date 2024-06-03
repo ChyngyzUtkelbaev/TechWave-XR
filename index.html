@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWave XR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="assets/logo.png" alt="TechWave Inc.">
+        </div>
+        <ul class="nav-links">
+            <li class="link"><a href="#product">Продукт</a></li>
+            <li class="link"><a href="#news">Новости</a></li>
+            <li class="link"><a href="#contact">Контакты</a></li>
+            <li><a href="#order" class="btn">Предзаказ</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <div class="content">
+            <h4>Добро пожаловать в TechWave XR</h4>
+            <h1>Погружение в <span>виртуальную реальность</span></h1>
+            <p>Наш новейший продукт предлагает непревзойденный опыт дополненной реальности.</p>
+            <a href="#order" class="btn">Сделать предзаказ</a>
+        </div>
+        <div class="image">
+            <img src="assets/hero.png" alt="TechWave XR">
+        </div>
+    </header>
+    
+    <section id="product" class="container">
+        <h2 class="header">Продукт</h2>
+        <div class="product-content">
+            <div class="left">
+                <img src="assets/product.png" alt="TechWave XR">
+            </div>
+            <div class="right">
+                <h4>Основные характеристики</h4>
+                <p>исание продукта
+                    TechWave XR — это инновационная гарнитура, разработанная для самых требовательных пользователей. Она обеспечивает невероятное качество изображения, высокую производительность и комфорт даже при длительном использовании. С TechWave XR вы можете играть, работать, учиться и исследовать новые виртуальные пространства с непревзойденным уровнем детализации и интерактивности.
+                    
+                    Основные характеристики
+                    Разрешение экрана: 4K Ultra HD (3840 x 2160 пикселей) на каждый глаз для яркого и четкого изображения.
+                    Частота обновления: 120 Гц для плавного воспроизведения движений без задержек.
+                    Угол обзора: 110 градусов для широкого и реалистичного поля зрения.
+                    Процессор: 8-ядерный процессор последнего поколения для высокой производительности и низкой задержки.
+                    Память: 8 ГБ оперативной памяти и 128 ГБ встроенной памяти для хранения игр и приложений.
+                    Подключение: Поддержка Wi-Fi 6 и Bluetooth 5.0 для быстрого и стабильного беспроводного соединения.
+                    Аудио: Встроенные стереодинамики с поддержкой пространственного звучания и 3D-аудио.
+                    Трекинг: 6DoF (шесть степеней свободы) трекинг с точными датчиками для полного контроля движений.
+                    Контроллеры: Эргономичные контроллеры с тактильной обратной связью для реалистичного взаимодействия с виртуальными объектами.
+                    Совместимость: Поддержка широкого спектра приложений и игр, совместимых с платформами VR и AR.</p>
+                <video controls>
+                    <source src="assets/product-demo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    
+    <section id="order" class="container">
+        <h2 class="header">Сделать предзаказ</h2>
+        <div class="order-form">
+            <form id="preOrderForm">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="quantity">Количество устройств</label>
+                <input type="number" id="quantity" name="quantity" required>
+                
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </section>
+    
+    <section id="news" class="container">
+        <h2 class="header">Новости</h2>
+        <div class="news-feed">
+            <div class="news-item">
+                <h4>Новость 1</h4>
+                <p>Текст новости о продукте TechWave XR.</p>
+            </div>
+            <div class="news-item">
+                <h4>Новость 2</h4>
+                <p>Текст новости о продукте TechWave XR.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="container">
+        <h2 class="header">Контакты</h2>
+        <div class="contact-info">
+            <p>Email: chingiz.ytkelbaev123@mail.ru</p>
+            <p>Телефон: +(996) 709 999 379</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 TechWave Inc. Все права защищены.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
