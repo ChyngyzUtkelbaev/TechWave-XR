@@ -1,6 +1,7 @@
 # TechWave-XR
 
 https://chyngyzutkelbaev.github.io/TechWave-XR/
+https://youtu.be/C8qIytorC28
 
 ![Снимок экрана 2024-06-03 160800](https://github.com/ChyngyzUtkelbaev/TechWave-XR/assets/76212719/ed8d91a4-3604-45fc-a7b9-9874cdde9cd8)
 ![Снимок экрана 2024-06-03 160813](https://github.com/ChyngyzUtkelbaev/TechWave-XR/assets/76212719/2138d216-4f6f-402d-a765-05964ac6e388)
