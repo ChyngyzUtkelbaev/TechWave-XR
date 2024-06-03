@@ -1,22 +1,22 @@
-// Получаем все ссылки, которые ведут на якоря
+
 const links = document.querySelectorAll('a[href^="#"]');
 
-// Добавляем обработчик события клика для каждой ссылки
+
 links.forEach(link => {
-    link.addEventListener('click', function(event) {
-        // Предотвращаем стандартное действие ссылки
-        event.preventDefault();
-        
-        // Получаем значение атрибута href ссылки
+    link.addEventListener('click', function(e) {
+      
+        e.preventDefault();
+
+     
         const href = this.getAttribute('href');
-        
-        // Находим элемент, к которому нужно прокрутить страницу
+
+     
         const target = document.querySelector(href);
-        
-        // Получаем верхнюю координату элемента относительно окна просмотра
+
+ 
         const offsetTop = target.getBoundingClientRect().top;
-        
-        // Плавно прокручиваем страницу к указанному элементу
+
+    
         window.scrollBy({
             top: offsetTop,
             behavior: 'smooth'
@@ -24,13 +24,11 @@ links.forEach(link => {
     });
 });
 
-// Функция для открытия/закрытия меню
 function openMenu() {
     const nav = document.querySelector('nav ul');
     nav.classList.toggle('open');
 }
 
-// Обработчик события отправки формы
 document.getElementById('preOrderForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const name = document.getElementById('name').value;
@@ -43,3 +41,4 @@ document.getElementById('preOrderForm').addEventListener('submit', function(even
         alert('Пожалуйста, заполните все поля.');
     }
 });
+
